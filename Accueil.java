@@ -39,6 +39,8 @@ public class Accueil {
              System.out.println("Saisissez l'effectif");
              effectif = sc3.nextInt();
              Groupe.addGroup(ID,nomGroupe,effectif);
+             /*le break ci dessous ne fonctionne pas. Je voulais utiliser le concept d'etiquette
+             pour revenir a la ligne 24 mais j'ai toujours un erreur*/
              break premierePartie;
          }
          
