@@ -1,28 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package sn.supinfo.javapoo.miniprojet;
+package sn.supinfo.javapoo.miniprojet.classes;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 /**
  *
  * @author Muhammed Fode
  */
 
-public  class Groupe {
+public class Groupe {
     private int ID;
     private String nom;
-    private int effectif;
+    private int ListEtudiant;
 
     public Groupe() {}
     
-    public Groupe(int ID, String nom, int effectif) {
+
+    public Groupe(int ID, String nom, int ListEtudiant) {
         this.ID = ID;
         this.nom = nom;
-        this.effectif = effectif;
+        this.ListEtudiant = ListEtudiant;
+        
     }
 
     public int getID() {
@@ -41,34 +38,16 @@ public  class Groupe {
         this.nom = nom;
     }
 
-    public int getEffectif() {
-        return effectif;
+    public int getListEtudiant() {
+        return ListEtudiant;
     }
 
-    public void setEffectif(int effectif) {
-        this.effectif = effectif;
+    public void setListEtudiant(int ListEtudiant) {
+        this.ListEtudiant = ListEtudiant;
     }
 
     @Override
     public String toString() {
-        return "Groupe{" + "ID=" + ID + ", nom=" + nom + ", effectif=" + effectif + '}';
-    }
-    
-    ArrayList<Groupe> Groupes = new ArrayList<>();
-    
-    public static void addGroup(int ID, String nom, int effectif)
-    {
-             Groupe grp = new Groupe();
-             //Groupes.add(new Groupe(ID,nom,effectif));
-             System.out.println("Ajout effectué avec Succès!");
-    }
-    
-    public void editGroup(String choix2)
-    {
-        System.out.println(Groupes);
-//for (String i : Groupes)
-    }
-    
-    
-    
+        return "Groupe{" + "ID=" + ID + ", nom=" + nom + ", ListEtudiant=" + ListEtudiant + '}';
+    }    
 }
